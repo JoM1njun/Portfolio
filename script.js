@@ -52,7 +52,7 @@ const projectDetails = {
     role: "기획 · 개발",
     architecture: "Browser → Express.js → MySQL",
     github: "https://github.com/JoM1njun/CampusGuide",
-    demo: "https://jom1njun.github.io/CampusGuide/",
+    demo: "https://campusmap-two.vercel.app/",
     embed: "",
     image: ""
   },
