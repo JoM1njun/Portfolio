@@ -80,12 +80,12 @@ em {
 
 nav {
   display: flex;
-  gap: 28px;
+  gap: 30px;
 }
 
 nav a,
 .pill {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   text-decoration: none;
   transition: .2s
@@ -132,7 +132,7 @@ nav a:hover,
 .label,
 .skill-group>span,
 .resume-list>div>span {
-  font: 500 10px JetBrains Mono, monospace;
+  font: 500 12px JetBrains Mono, monospace;
   letter-spacing: .13em;
   color: var(--muted)
 }
@@ -154,7 +154,7 @@ nav a:hover,
 }
 
 .hero-center h1 {
-  font-size: clamp(70px, 12vw, 150px);
+  font-size: clamp(70px, 12vw, 170px);
   line-height: .84;
   letter-spacing: -.075em;
   margin: 25px 0 35px
@@ -162,7 +162,7 @@ nav a:hover,
 
 .intro {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8
 }
 
@@ -171,8 +171,8 @@ nav a:hover,
 }
 
 .circle-btn {
-  padding: 12px 15px 12px 15px;
-  gap: 20px;
+  padding: 15px 18px 15px 18px;
+  gap: 24px;
   border: 1px solid #3a3a42;
   border-radius: 999px;
   display: inline-flex;
@@ -180,7 +180,7 @@ nav a:hover,
   text-align: center;
   color: #fff;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.25;
   transition: .35s
 }
@@ -702,7 +702,7 @@ nav a:hover,
   border-radius: 999px;
   padding: 13px 16px;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer
 }
 
