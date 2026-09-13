@@ -84,9 +84,9 @@ const projectDetails = {
   },
   ai: {
     type: "AI PROJECT · ONGOING",
-    title: "AI 인형",
+    title: "AI 재난 대응 플랫폼",
     period: "2026.09 — 진행 중",
-    description: "사용자의 평소 생활 패턴을 학습하고 평소와 다른 변화를 파악해 먼저 말을 걸거나 필요한 정보를 제공하는 생활 동반 서비스입니다.",
+    description: "시민이 현장에서 발견한 재난이나 사건을 사진·위치 등으로 신고하면, AI가 신고를 분석·통합하여 하나의 재난 사건으로 재구성하고, 이를 바탕으로 안전한 대피·이동 정보 제공 서비스입니다.",
     stack: "Python · RAGFlow · n8n · Appsmith · SIM",
     role: "기획 · 개발",
     architecture: "Data → Python → n8n → AI → Response",
