@@ -53,7 +53,7 @@ const projectDetails = {
     architecture: "Browser → Express.js → MySQL",
     github: "https://github.com/JoM1njun/CampusGuide",
     demo: "https://campusmap-two.vercel.app/",
-    embed: "https://github.com/JoM1njun/CampusGuide",
+    embed: "https://campusmap-two.vercel.app/",
     image: ""
   },
   dtrip: {
@@ -66,21 +66,21 @@ const projectDetails = {
     architecture: "Public Data → API → Server → UI",
     github: "https://github.com/JoM1njun/DTrip",
     demo: "https://dtrip.onrender.com",
-    embed: "https://www.figma.com/proto/qISHLOWcYdja8KJdJYiWjM/%ED%95%B4%EC%BB%A4%ED%86%A4-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=261-156&p=f&t=v6gYrPRqhMwRSrRm-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A489&show-proto-sidebar=1",
+    embed: "https://dtrip-website.onrender.com/",
     image: ""
   },
   helmet: {
-    type: "FULL STACK",
-    title: "상태 체크 안전모",
+    type: "BACKEND · API · DATABASE",
+    title: "SafeON",
     period: "2026.03 — 2026.06",
-    description: "센서 데이터를 기반으로 작업자의 상태 위험도를 분석하고 서버와 AI 모델 서버를 분리해 처리한 안전관리 서비스입니다.",
+    description: "필수로 착용해야하는 안전모와 센서 데이터를 활용하여 작업자 및 구급대원의 상태 위험도를 분석하고 서버와 AI 모델 서버를 분리해 처리한 안전관리 서비스입니다.",
     stack: "Express.js · FastAPI · Python · MySQL",
     role: "Backend / API",
     architecture: "Client → Express.js → FastAPI → MySQL",
     github: "https://github.com/JoM1njun/WSLServer",
     demo: "https://dani219-219.github.io/SUUM/#/login",
     embed: "",
-    image: ""
+    image: "./assets/SUUM-icon.svg"
   },
   ai: {
     type: "AI PROJECT · ONGOING",
@@ -244,3 +244,37 @@ const projectDetails = {
 })();
 
 /* PORTFOLIO PROJECT MODAL END */
+
+// ===================
+// Preview Section Drag Scroll
+// ===================
+const slider = document.querySelector(".category-section");
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+});
+
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+});
+
+slider.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+
+  e.preventDefault();
+
+  const x = e.pageX - slider.offsetLeft;
+  const walk = x - startX;
+
+  slider.scrollLeft = scrollLeft - walk;
+});
