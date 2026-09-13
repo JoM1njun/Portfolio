@@ -53,7 +53,7 @@ const projectDetails = {
     architecture: "Browser → Express.js → MySQL",
     github: "https://github.com/JoM1njun/CampusGuide",
     demo: "https://campusmap-two.vercel.app/",
-    embed: "",
+    embed: "https://github.com/JoM1njun/CampusGuide",
     image: ""
   },
   dtrip: {
@@ -66,7 +66,7 @@ const projectDetails = {
     architecture: "Public Data → API → Server → UI",
     github: "https://github.com/JoM1njun/DTrip",
     demo: "https://dtrip.onrender.com",
-    embed: "",
+    embed: "https://www.figma.com/proto/qISHLOWcYdja8KJdJYiWjM/%ED%95%B4%EC%BB%A4%ED%86%A4-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=261-156&p=f&t=v6gYrPRqhMwRSrRm-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A489&show-proto-sidebar=1",
     image: ""
   },
   helmet: {
