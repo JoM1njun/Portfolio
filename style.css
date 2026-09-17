@@ -137,6 +137,21 @@ nav a:hover,
   color: var(--muted)
 }
 
+.available {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.available-main {
+  display: flex;
+  align-items: center;
+}
+
+.available-sub {
+  padding-left: 13px;
+}
+
 .available b {
   display: inline-block;
   width: 6px;
@@ -844,6 +859,25 @@ footer {
 
   .hero {
     padding: 105px 20px 35px
+  }
+
+  .hero-top {
+    align-items: flex-start;
+  }
+
+  .hero-top>span:first-child {
+    flex-shrink: 0;
+  }
+
+  .available {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .available-sub {
+    max-width: 150px;
   }
 
   .hero h1 {
