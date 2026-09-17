@@ -49,7 +49,9 @@ const projectDetails = {
     period: "2024.02 — 2024.04",
     description: "교내 편의시설과 프린터, 카페, 버스정류장 등의 위치와 정보를 한 곳에서 확인할 수 있도록 만든 캠퍼스 안내 서비스입니다.",
     stack: "Express.js · HTML5 · JavaScript · MySQL",
+    environment: "",
     role: "기획 · 개발",
+    trouble: "",
     architecture: "Browser → Express.js → MySQL",
     github: "https://github.com/JoM1njun/CampusGuide",
     demo: "https://campusmap-two.vercel.app/",
@@ -62,10 +64,12 @@ const projectDetails = {
     period: "2025.09 — 2025.11",
     description: "대전 관광지와 축제 정보, 대중교통 도착 정보를 한 곳에서 확인할 수 있도록 통합한 관광·교통 서비스입니다.",
     stack: "Express.js · JavaScript · MySQL · Public API",
+    environment: "",
     role: "기획 · 데이터 수집/분석 · 개발",
+    trouble: "다양한 모바일 기기의 해상도에서 사용이 가능하도록 반응형 레이아웃을 조정하며 화면별 동작을 확인하였습니다.",
     architecture: "Public Data → API → Server → UI",
     github: "https://github.com/JoM1njun/DTrip",
-    demo: "https://dtrip.onrender.com",
+    demo: "https://dtrip-website.onrender.com/",
     embed: "https://dtrip-website.onrender.com/",
     image: ""
   },
@@ -75,7 +79,9 @@ const projectDetails = {
     period: "2026.03 — 2026.06",
     description: "필수로 착용해야하는 안전모와 센서 데이터를 활용하여 작업자 및 구급대원의 상태 위험도를 분석하고 서버와 AI 모델 서버를 분리해 처리한 안전 관리 서비스입니다.",
     stack: "Express.js · FastAPI · Python · MySQL",
+    environment: "Linux · Nginx",
     role: "Backend / API",
+    trouble: "오류 발생 시 문제 상황을 쉽게 확인할 수 있도록 요청·응답, DB 처리 결과와 오류 정보를 기록하는 로깅 기능을 구현하고, 입력값 검증 및 공통 오류 처리를 적용했습니다.",
     architecture: "Client → Express.js → FastAPI → MySQL",
     github: "https://github.com/JoM1njun/WSLServer",
     demo: "https://dani219-219.github.io/SUUM/#/login",
@@ -88,7 +94,9 @@ const projectDetails = {
     period: "2026.09 — 진행 중",
     description: "시민이 현장에서 발견한 재난이나 사건을 사진·위치 등으로 신고하면, AI가 신고를 분석·통합하여 하나의 재난 사건으로 재구성하고, 이를 바탕으로 안전한 대피·이동 정보를 제공하는 서비스입니다.",
     stack: "Python · RAGFlow · n8n · Appsmith · SIM",
+    environment: "",
     role: "기획 · 개발",
+    trouble: "",
     architecture: "Data → Python → n8n → AI → Response",
     github: "",
     demo: "",
@@ -159,6 +167,15 @@ const projectDetails = {
     $("projectModalDescription").textContent = p.description;
     $("projectModalTech").textContent = p.stack;
     $("projectModalRole").textContent = p.role;
+
+    const environment = $("projectModalEnvironment");
+    const trouble = $("projectModalTrouble");
+
+    environment.textContent = p.environment || "";
+    environment.parentElement.hidden = !p.environment;
+
+    trouble.textContent = p.trouble || "";
+    trouble.parentElement.hidden = !p.trouble;
     //$("projectModalGithub").href = p.github || "#";
     // const demo = $("projectModalDemo");
 
