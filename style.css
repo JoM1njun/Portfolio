@@ -636,7 +636,7 @@ nav a:hover,
   height: 110px;
   object-fit: cover;
   border-radius: 50%;
-  filter: grayscale(1);
+  filter: grayscale(0);
   margin-bottom: 30px
 }
 
